@@ -37,7 +37,17 @@ list2 = list1[::-1]
 
 str3 = " ".join(list2)
 
-
-
 print (str2)
 print(str3)
+
+size = len(list1)
+counter = 0
+final = ""
+
+while counter < size:
+    str4 = list1[counter]
+    str5 = str4[::-1]
+    final = final + str5 + " "
+    counter = counter + 1
+
+print (final)
